@@ -4,4 +4,4 @@ services:
     name: api-devops
     image: prueba
     ports:
-    - containerPort: 8080
+    - 8080:8080
