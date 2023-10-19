@@ -2,7 +2,7 @@ version: '3'
 
 services:  
   devops-api:
-    name: api-devops
+    container_name: api-devops
     image: prueba
     ports:
       - 8080:8080
