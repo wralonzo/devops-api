@@ -1,7 +1,8 @@
 version: '3'
+
 services:  
   devops-api:
     name: api-devops
     image: prueba
     ports:
-    - 8080:8080
+      - 8080:8080
