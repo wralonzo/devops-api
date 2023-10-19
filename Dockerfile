@@ -1,4 +1,5 @@
 FROM openjdk:18-ea-slim
-COPY --chown=devops-api.jar devops-api.jar ./
-ADD target/*.jar devops-api.jar
-ENTRYPOINT [ "java", "-jar", "devops-api.jar" ]
+EXPOSE 8080
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} devops-api.jar
+ENTRYPOINT [ "java", "-jar", "/devops-api.jar" ]
