@@ -1,0 +1,5 @@
+version: '3.9'
+services:  
+  devops-api:
+    image: openjdk:18-ea-slim
+    container_name: api-devopsumg
