@@ -1,5 +1,7 @@
-version: '3.9'
+version: '3'
 services:  
   devops-api:
-    image: openjdk:18-ea-slim
-    container_name: api-devopsumg
+    name: api-devops
+    image: prueba
+    ports:
+    - containerPort: 8080
