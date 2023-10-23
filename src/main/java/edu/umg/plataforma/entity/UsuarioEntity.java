@@ -22,22 +22,22 @@ public class UsuarioEntity implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario", nullable = false)
-    private Integer idUsuario;
+    public Integer idUsuario;
 
     @Column(name = "nombre", nullable = false)
-    private String nombre;
+    public String nombre;
 
     @Column(name = "apellido", nullable = false)
-    private String apellido;
+    public String apellido;
 
     @Column(name = "email", nullable = false)
-    private String email;
+    public String email;
 
     @Column(name = "contrasenia", nullable = false)
-    private String contrasenia;
+    public String contrasenia;
 
     @Enumerated(EnumType.STRING)
-    private RolEnum rol;
+    public RolEnum rol;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

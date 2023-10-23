@@ -51,6 +51,12 @@ public class AuthenticacionServiceImpl implements AuthenticacionService {
         var jwtToken = jwtServiceImpl.generateToken(usuario);
         return RespuestaAuthenticacion.builder()
                 .token(jwtToken)
+                .idUsuario(usuario.idUsuario)
+                .nombre(usuario.nombre)
+                .apellido(usuario.apellido)
+                .email(usuario.email)
+                .contrasenia(usuario.contrasenia)
+                .rol(usuario.rol)
                 .build();
     }
 }
